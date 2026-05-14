@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Georgia Democratic Primary Quick Guide - May 19, 2026</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        :root {
+            --primary: #1e40af;
+            --accent: #dc2626;
+            --text: #111827;
+            --text-light: #6b7280;
+            --bg: #f8fafc;
+            --white: #ffffff;
+            --border: #e5e7eb;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.5;
+            color: var(--text);
+            background: var(--bg);
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 16px;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, var(--primary), #3b82f6);
+            color: white;
+            padding: 24px;
+            border-radius: 8px;
+            margin-bottom: 24px;
+        }
+        
+        .header h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        
+        .election-info {
+            background: var(--accent);
+            padding: 12px;
+            border-radius: 6px;
+            margin-top: 16px;
+            font-weight: 600;
+        }
+        
+        .nav {
+            background: var(--white);
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 24px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 16px;
+            z-index: 100;
+            transition: transform 0.3s ease;
+        }
+        
+        .nav.hidden {
+            transform: translateY(-100%);
+        }
+        
+        .nav-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            list-style: none;
+        }
+        
+        .nav-list a {
+            color: var(--primary);
+            text-decoration: none;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+        
+        .nav-list a:hover {
+            background: var(--primary);
+            color: white;
+        }
+        
+        .race {
+            background: var(--white);
+            margin-bottom: 24px;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .race-header {
+            background: var(--primary);
+            color: white;
+            padding: 16px 20px;
+        }
+        
+        .race-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+        
+        .race-subtitle {
+            opacity: 0.9;
+            font-size: 0.9rem;
+        }
+        
+        .candidates {
+            padding: 20px;
+        }
+        
+        .candidate {
+            border-left: 3px solid var(--primary);
+            padding: 16px;
+            margin-bottom: 16px;
+            background: #f8fafc;
+            border-radius: 0 6px 6px 0;
+        }
+        
+        .candidate:last-child {
+            margin-bottom: 0;
+        }
+        
+        .candidate-name {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 4px;
+        }
+        
+        .candidate-title {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-bottom: 12px;
+        }
+        
+        .positions {
+            margin-bottom: 8px;
+        }
+        
+        .positions h4 {
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        
+        .positions ul {
+            margin-left: 16px;
+        }
+        
+        .positions li {
+            margin-bottom: 2px;
+            font-size: 0.9rem;
+        }
+        
+        .polling {
+            background: #fef3c7;
+            padding: 8px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            margin-bottom: 8px;
+        }
+        
+        .ballot-questions {
+            background: #eff6ff;
+            border: 1px solid #3b82f6;
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 24px;
+        }
+        
+        .question {
+            background: white;
+            padding: 12px;
+            margin-bottom: 12px;
+            border-radius: 4px;
+            border-left: 3px solid #3b82f6;
+        }
+        
+        .question:last-child {
+            margin-bottom: 0;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 24px;
+            margin-top: 32px;
+            background: var(--white);
+            border-radius: 8px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 12px;
+            }
+            
+            .header h1 {
+                font-size: 1.5rem;
+            }
+            
+            .nav-list {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Georgia Democratic Primary Quick Guide</h1>
+            <div>May 19, 2026 • All contested races & key info</div>
+            <div class="election-info">
+                Election Day: Tuesday, May 19 • Early Voting: April 27 - May 15 • Polls: 7 AM - 7 PM
+            </div>
+        </header>
+        
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="#governor">Governor</a></li>
+                <li><a href="#lt-governor">Lt. Gov</a></li>
+                <li><a href="#attorney-general">Attorney General</a></li>
+                <li><a href="#secretary-state">Secretary of State</a></li>
+                <li><a href="#congress">Congress</a></li>
+                <li><a href="#county">County</a></li>
+                <li><a href="#ballot-questions">Questions</a></li>
+            </ul>
+        </nav>
+        
+        <section id="governor" class="race">
+            <div class="race-header">
+                <h2 class="race-title">Governor</h2>
+                <div class="race-subtitle">7 candidates • Potential runoff</div>
+            </div>
+            <div class="candidates">
+                <div class="candidate">
+                    <h3 class="candidate-name">Keisha Lance Bottoms</h3>
+                    <div class="candidate-title">Former Atlanta Mayor</div>
+                    <div class="polling"><strong>Polling:</strong> Leading 38-43%, but 36% undecided</div>
+                    <div class="positions">
+                        <h4>Key Positions:</h4>
+                        <ul>
+                            <li>Expand Medicaid</li>
+                            <li>Repeal 6-week abortion ban</li>
+                            <li>Make housing more affordable</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="candidate">
+                    <h3 class="candidate-name">Michael Thurmond</h3>
+                    <div class="candidate-title">Former DeKalb County CEO</div>
+                    <div class="polling"><strong>Polling:</strong> 10-25%</div>
+                    <div class="positions">
+                        <h4>Key Positions:</h4>
+                        <ul>
+                            <li>Support working families</li>
+                            <li>Expand healthcare access</li>
+                            <li>Build better education system</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="candidate">
+                    <h3 class="candidate-name">Jason Esteves</h3>
+                    <div class="candidate-title">Former State Senator</div>
+                    <div class="polling"><strong>Polling:</strong> 3-10%</div>
+                    <div class="positions">
+                        <h4>Key Positions:</h4>
+                        <ul>
+                            <li>Lower cost of living</li>
+                            <li>Fund public education</li>
+                            <li>Support small businesses</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="candidate">
+                    <h3 class="candidate-name">Geoff Duncan</h3>
+                    <div class="candidate-title">Former Republican Lt. Governor</div>
+                    <div class="polling"><strong>Polling:</strong> 5-17%</div>
+                    <div class="positions">
+                        <h4>Key Positions:</h4>
+                        <ul>
+                            <li>Crossover appeal to moderates</li>
+                            <li>Rejected Trump election claims</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="candidate">
+                    <div class="candidate-name">Also Running:</div>
+                    <div>Olu Brown, Amanda Duffy, Derrick Jackson</div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="lt-governor" class="race">
+            <div class="race-header">
+                <h2 class="race-title">Lieutenant Governor</h2>
+                <div class="race-subtitle">3 candidates</div>
+            </div>
+            <div class="candidates">
+                <div class="candidate">
+                    <h3 class="candidate-name">Josh McLaurin</h3>
+                    <div class="candidate-title">State Senator</div>
+                    <div class="positions">
+                        <h4>Key Positions:</h4>
+                        <ul>
+                            <li>Expand Medicaid</li>
+                            <li>Restrict corporate housing ownership</li>
+                            <li>17 Senate colleague endorsements</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="candidate">
+                    <h3 class="candidate-name">Nabilah Parkes</h3>
+                    <div class="candidate-title">Former State Senator</div>
+                    <div class="positions">
+                        <h4>Key Positions:</h4>
+                        <ul>
+                            <li>Lower cost of living</li>
+                            <li>Protect voting rights</li>
+                            <li>First-generation college graduate</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="candidate">
+                    <h3 class="candidate-name">Richard N. Wright</h3>
+                    <div class="candidate-title">CPA, Businessman</div>
+                    <div class="positions">
+                        <h4>Key Positions:</h4>
+                        <ul>
+                            <li>Moderate approach</li>
+                            <li>Business experience</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="attorney-general" class="race">
+            <div class="race-header">
+                <h2 class="race-title">Attorney General</h2>
+                <div class="race-subtitle">2 candidates</div>
+            </div>
+            <div class="candidates">
+                <div class="candidate">
+                    <h3 class="candidate-name">Tanya Miller</h3>
+                    <div class="candidate-title">State Representative</div>
+                    <div class="positions">
+                        <h4>Key Positions:</h4>
+                        <ul>
+                            <li>Consumer protection</li>
+                            <li>Civil rights defense</li>
+                            <li>Target scams & predatory lending</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="candidate">
+                    <h3 class="candidate-name">Bob Trammell</h3>
+                    <div class="candidate-title">Former House Minority Leader</div>
+                    <div class="positions">
+                        <h4>Key Positions:</h4>
+                        <ul>
+                            <li>"The People's Attorney"</li>
+                            <li>Protect consumers & voting rights</li>
+                            <li>Fight fraud & scams</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="secretary-state" class="race">
+            <div class="race-header">
+                <h2 class="race-title">Secretary of State</h2>
+                <div class="race-subtitle">4 candidates</div>
+            </div>
+            <div class="candidates">
+                <div class="candidate">
+                    <h3 class="candidate-name">Dana Barrett</h3>
+                    <div class="candidate-title">Fulton County Commissioner</div>
+                    <div class="positions">
+                        <h4>Key Positions:</h4>
+                        <ul>
+                            <li>Secure elections from MAGA takeover</li>
+                            <li>Streamline business licensing</li>
+                            <li>Refused to seat election deniers</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="candidate">
+                    <h3 class="candidate-name">Penny Brown Reynolds</h3>
+                    <div class="candidate-title">Former Judge</div>
+                    <div class="positions">
+                        <h4>Key Positions:</h4>
+                        <ul>
+                            <li>Protect voting rights</li>
+                            <li>Modernize licensing</li>
+                            <li>Biden administration experience</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="candidate">
+                    <h3 class="candidate-name">Adrian Consonery Jr.</h3>
+                    <div class="candidate-title">Voting Rights Advocate (26)</div>
+                    <div class="positions">
+                        <h4>Key Positions:</h4>
+                        <ul>
+                            <li>Modernize voter ID verification</li>
+                            <li>Promote ranked-choice voting</li>
+                            <li>Voter awareness campaigns</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="candidate">
+                    <h3 class="candidate-name">Cam Ashling</h3>
+                    <div class="candidate-title">Business Owner</div>
+                    <div class="positions">
+                        <h4>Key Positions:</h4>
+                        <ul>
+                            <li>Hand-marked paper ballots</li>
+                            <li>Expedite licensing</li>
+                            <li>Vietnamese immigrant advocate</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="congress" class="race">
+            <div class="race-header">
+                <h2 class="race-title">US House District 4</h2>
+                <div class="race-subtitle">Covers DeKalb & Gwinnett</div>
+            </div>
+            <div class="candidates">
+                <div class="candidate">
+                    <h3 class="candidate-name">Hank Johnson (Incumbent)</h3>
+                    <div class="candidate-title">US Rep since 2007</div>
+                    <div class="positions">
+                        <h4>Key Positions:</h4>
+                        <ul>
+                            <li>Lower cost of living</li>
+                            <li>Protect democracy</li>
+                            <li>Won last race by 51 points</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="candidate">
+                    <h3 class="candidate-name">Ben Truman</h3>
+                    <div class="candidate-title">Political Consultant</div>
+                    <div class="positions">
+                        <h4>Key Positions:</h4>
+                        <ul>
+                            <li>$15 minimum wage</li>
+                            <li>Term limits</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="candidate">
+                    <h3 class="candidate-name">Ansel Postell</h3>
+                    <div class="candidate-title">Businessman</div>
+                    <div class="positions">
+                        <ul>
+                            <li>Limited public information available</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="county" class="race">
+            <div class="race-header">
+                <h2 class="race-title">DeKalb County Commissioner District 7</h2>
+                <div class="race-subtitle">3 candidates • Key issue: Data centers</div>
+            </div>
+            <div class="candidates">
+                <div class="candidate">
+                    <h3 class="candidate-name">LaDena Bolton (Incumbent)</h3>
+                    <div class="candidate-title">Commissioner, Chemist</div>
+                    <div class="positions">
+                        <h4>Key Positions:</h4>
+                        <ul>
+                            <li>Opposes data centers in residential areas</li>
+                            <li>Voted to extend moratorium</li>
+                            <li>Won 2024 runoff vs. Adams</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="candidate">
+                    <h3 class="candidate-name">Jacqueline Adams</h3>
+                    <div class="candidate-title">Businesswoman</div>
+                    <div class="positions">
+                        <h4>Key Positions:</h4>
+                        <ul>
+                            <li>Data centers only in industrial zones</li>
+                            <li>Require workforce training benefits</li>
+                            <li>Economic development focus</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="candidate">
+                    <h3 class="candidate-name">Oneka Willabus</h3>
+                    <div class="candidate-title">Entrepreneur</div>
+                    <div class="positions">
+                        <h4>Key Positions:</h4>
+                        <ul>
+                            <li>Resident-centered decisions</li>
+                            <li>Infrastructure improvements</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <div class="ballot-questions" id="ballot-questions">
+            <h2>Democratic Ballot Questions</h2>
+            <div class="question">
+                <h4>Statewide Question 1:</h4>
+                <p>Should Georgia raise sales tax on everyday items to pay for income tax cuts for millionaires?</p>
+            </div>
+            <div class="question">
+                <h4>Statewide Question 2:</h4>
+                <p>Is it ethical for candidates who enriched themselves in office to hold statewide office?</p>
+            </div>
+            <div class="question">
+                <h4>DeKalb Questions:</h4>
+                <p><strong>1. Data Centers:</strong> Require public hearings & environmental studies?</p>
+                <p><strong>2. ICE:</strong> Support local law enforcement acting as ICE agents?</p>
+                <p><strong>3. Mixed-Use:</strong> Increase zoning for walkable neighborhoods?</p>
+                <p><strong>4. Gun Violence:</strong> Is this one of your top concerns?</p>
+            </div>
+        </div>
+        
+        <footer class="footer">
+            <p><strong>Election Day: Tuesday, May 19, 2026</strong></p>
+            <p>Early voting: April 27 - May 15 • Polls: 7 AM - 7 PM</p>
+            <p>Find your polling place: <a href="https://mvp.sos.ga.gov">mvp.sos.ga.gov</a></p>
+        </footer>
+    </div>
+    
+    <script>
+        let lastScrollTop = 0;
+        const nav = document.querySelector('.nav');
+        
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop > lastScrollTop && scrollTop > 100) {
+                nav.classList.add('hidden');
+            } else {
+                nav.classList.remove('hidden');
+            }
+            
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+        });
+    </script>
+</body>
+</html>
